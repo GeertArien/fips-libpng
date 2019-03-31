@@ -1,4 +1,4 @@
-# fips-libgpng
+# fips-libpng
 
 fipsified libpng (http://www.libpng.org/pub/png/libpng.html)
 
