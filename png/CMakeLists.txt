@@ -435,3 +435,6 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/scripts/gensrc.cmake.in
 fips_end_module()
 
 add_dependencies(png genfiles)
+
+# required to include generated libpngconf.h in projects depending on fips-libpng
+target_include_directories(png PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/>)
